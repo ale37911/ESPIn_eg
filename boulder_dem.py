@@ -19,7 +19,7 @@ def read():
 def display(data, show=False, outfile="boulder_dem.png"):
     fig, ax = plt.subplots()
     elev = ax.imshow(data, cmap="viridis")
-    fig.colorbar(elev, label="Elevation (m)")
+    fig.colorbar(elev, label="Elevation (meters)")
     plt.title("Boulder Topography")
 
     if show is True:
